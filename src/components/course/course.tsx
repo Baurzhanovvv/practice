@@ -127,5 +127,5 @@ const Course = () => {
         </>
     );
 };
-
+// https://www.canva.com/design/DAGU1lIrrQo/FKAvUV5CS1qrFVy9cxuTKA/edit?utm_content=DAGU1lIrrQo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 export default Course;
