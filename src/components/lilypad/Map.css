@@ -1,0 +1,51 @@
+.map {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/images/background.png');
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+
+.lesson-pad {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-image: url('../../assets/images/lily.png');
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    padding: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.lesson-description {
+    font-size: 0.8rem;
+    color: lightgray;
+    margin-top: 4px;
+    text-align: center;
+}
+
+
+.lesson-pad:hover {
+    transform: scale(1.1);
+}
+
+.frog-character {
+    position: absolute;
+    z-index: 40000;
+    width: 80px;
+    height: 80px;
+    background-image: url('../../assets/images/frog.png');
+    background-size: cover;
+    transition: left 0.5s ease, top 0.5s ease;
+    /* Smooth movement */
+}

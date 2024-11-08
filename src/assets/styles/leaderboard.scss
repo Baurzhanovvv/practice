@@ -1,0 +1,133 @@
+.leader {
+    margin-top: 50px;
+}
+
+.board {
+    margin-bottom: 20px;
+    background-color: #E9A0A1;
+    padding: 20px;
+    border-radius: 16px;
+    & .btn {
+        width: 100%;
+        text-align: center;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+        padding-top: 20px;
+    }
+    &__item {
+        background-color: #fff;
+        width: 100%;
+        border-radius: 999px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    &__text {
+        font-weight: 700;
+    }
+    &__num {
+        background-color: gold;
+        padding: 15px 20px;
+        cursor: pointer;
+        border-radius: 999px;
+        font-weight: 700;
+        width: 10px;
+        &.second {
+            background-color: #D3D3D3;
+        }
+        &.third {
+            background-color: #DE8F5F;
+        }
+    }
+}
+
+.leader {
+    .container {
+        padding: 20px;
+    }
+    .board__inner {
+        text-align: center;
+    }
+    .board__num {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 600px;
+        max-height: 80vh;
+        overflow-y: auto;
+        text-align: center;
+        position: relative;
+    }
+
+    &__close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 1.5rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.1rem;
+        padding: 10px;
+        background: #f9f9f9;
+        border-radius: 4px;
+
+        &:nth-child(odd) {
+            background: #e9e9e9;
+        }
+    }
+
+    &__place, &__nickname, &__level {
+        flex: 1;
+    }
+
+    &__place {
+        font-weight: bold;
+    }
+
+    &__nickname {
+        text-align: left;
+    }
+
+    &__level {
+        text-align: right;
+        color: #555;
+    }
+}
